@@ -55,6 +55,10 @@ buttonPrev.addEventListener('click', () => {
     searchPokemon = 649;
   } else searchPokemon -= 1
 
+  if (searchPokemon > 649) {
+    searchPokemon = 649
+  }
+
   renderPokemon(searchPokemon)
 });
 
